@@ -1,78 +1,18 @@
-# Purge
+# React + Vite
 
-## Descripcion General
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Purge es un sistema de gestion para la postulacion de la SCESI (Sociedad cientifca de estudiantes de Sistemas e Informatica).
+Currently, two official plugins are available:
 
-## Objetivos del Sistema
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### Objetivo general
+## React Compiler
 
-Desarrollar una plataforma web que permita administrar el proceso de postulacion de nuevos integrantes de la SCESI haciendolo intuitivo y rapido de usar.
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-### Objetivos Especificos
+Note: This will impact Vite dev & build performances.
 
-- Gestionar inscripciones
-- Gestionar fases de la postulacion
-- Gestionar purga de postulantes
-- Gestionar examenes virtuales
-- Gestionar laboratorios virtuales
+## Expanding the ESLint configuration
 
-## Roles del sistema
-
-### Administrador
-
-Se encargara de poder hacer cambios en las fechas o recepcion de nuevos postulantes.
-
-### Tutor
-
-Se encargara de su area, subiendo contenido, planificando practicas y examenes
-
-### Postulante
-
-Es el que pasara por las diferentes etapas de postulacion, teniendo que aprobar todo para ser un miembro scesi.
-
-## Arquitectura del Sistema
-
-El sistema seguirá una arquitectura cliente-servidor basada en tres capas:
-
-### Frontend
-
-Desarrollada con React, encargada de la interacción con los usuarios.
-
-### Backend
-
-Desarrollada con Express, responsable de procesar solicitudes, validar información y gestionar APIs REST.
-
-### Capa de Datos
-
-Gestionada mediante Supabase utilizando PostgreSQL para almacenamiento seguro y escalable.
-
-## Tecnologías Utilizadas
-
-### Frontend
-
-- React
-- HTML5
-- CSS3
-- JavaScript
-
-### Backend
-
-- Express
-- Node.js
-- JWT para autenticación
-
-### Base de Datos
-
-- Supabase
-- PostgreSQL
-
-### Despliegue y Optimización
-
-- Cloudflare
-
-### Control de Versiones
-
-- Git
-- GitHub
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
