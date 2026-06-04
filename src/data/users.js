@@ -4,14 +4,12 @@ export const users = [
     apellidos: "Vallejos Bascope",
     mail: "andyvallejosgb@gmail.com",
     password: "admin123",
-    auth: false,
   },
 
   {
-    nombres: "Gaby",
-    apellidos: "Alcala",
-    mail: "gab@gmail.com",
-    password: "algo123",
-    auth: false,
+    nombres: "Matias",
+    apellidos: "Torrez",
+    mail: "mati@gmail.com",
+    password: "admin123",
   },
 ];
