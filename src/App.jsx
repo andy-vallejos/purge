@@ -1,8 +1,7 @@
-import "./App.css";
-import { LayoutPrincipal } from "./pages/LayoutPrincipal";
+import { LayoutPrincipal } from "./layouts/LayoutPrincipal";
 
 function App() {
-  return <LayoutPrincipal></LayoutPrincipal>;
+  return <LayoutPrincipal />;
 }
 
 export default App;
