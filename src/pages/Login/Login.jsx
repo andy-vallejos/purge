@@ -1,9 +1,9 @@
 import style from "./Login.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useAuth } from "../hooks/useAuth";
+import { useAuth } from "@/hooks/useAuth";
 
-export default function Login() {
+export function Login() {
   const [role, setRole] = useState("postulante");
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");

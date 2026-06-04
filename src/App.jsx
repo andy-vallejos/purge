@@ -1,4 +1,4 @@
-import { LayoutPrincipal } from "./layouts/LayoutPrincipal";
+import { LayoutPrincipal } from "./layouts";
 
 function App() {
   return <LayoutPrincipal />;
