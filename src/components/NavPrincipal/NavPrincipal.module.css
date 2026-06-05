@@ -6,10 +6,21 @@
   background-color: var(--background-2);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
+}
+
+.nav__container ul {
+  display: flex;
+  gap: 20px;
 }
 
 .nav__container a {
   color: var(--color-2);
   text-decoration: none;
+}
+@media (max-width: 600px) {
+  .nav__container ul {
+    display: none;
+  }
 }
