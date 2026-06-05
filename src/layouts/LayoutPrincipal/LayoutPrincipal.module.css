@@ -39,20 +39,19 @@ footer {
   justify-content: space-between;
 }
 
-main {
+.main {
   min-height: 80vh;
   justify-content: center;
   padding: 30px;
 }
 
 footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--color-2);
   padding: 20px;
 }
 
 @media (max-width: 500px) {
-  main {
+  .main {
     padding: 0;
   }
 }
