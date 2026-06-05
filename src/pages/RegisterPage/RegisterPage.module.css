@@ -84,6 +84,7 @@
 @media (max-width: 500px) {
   .container {
     width: 400px;
+    border: none;
   }
   .information__personal {
     width: 100%;

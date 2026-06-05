@@ -16,13 +16,7 @@ export function RegisterPage() {
 
   return (
     <section className={style.container}>
-      <header>
-        <h1>FORMULARIO DE POSTULACIÓN</h1>
-      </header>
-
       <form onSubmit={handleSubmit}>
-        <p>INFORMACIÓN PERSONAL</p>
-
         <section className={style.information__personal}>
           <FormField
             name="fullName"
