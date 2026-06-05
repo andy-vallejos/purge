@@ -1,0 +1,1 @@
+export { LayoutSecundary } from "./LayoutSecundary";
