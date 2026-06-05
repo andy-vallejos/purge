@@ -1,6 +1,7 @@
 :root {
   --background-1: #0e0e10;
   --background-2: #1b1b1d;
+  --background-3: #2a2a2c;
   --color-1: white;
   --color-2: #b9c7e4;
   --color-3: #c5c6cd;
@@ -59,4 +60,13 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+button {
+  width: 100%;
+  background-color: #cd032b;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
 }
