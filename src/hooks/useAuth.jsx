@@ -3,11 +3,8 @@ import { users } from "../data/users";
 export function useAuth() {
   const login = (mail, password) => {
     const user = users.find((u) => u.mail === mail && u.password === password);
-
     if (!user) return null;
-
     localStorage.setItem("user", JSON.stringify(user));
-
     return user;
   };
 
