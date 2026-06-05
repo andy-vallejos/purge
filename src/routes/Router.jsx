@@ -1,22 +1,33 @@
-import { Routes, Route } from "react-router-dom";
-import { LoginPage, HomePage, RegisterPage } from "../pages";
-import ProtectedRoute from "./ProtectedRoute";
+import { createBrowserRouter } from "react-router-dom";
+import { LayoutPrincipal, LayoutSecundary } from "../layouts";
+import { LoginPage, RegisterPage, PanelPage } from "../pages";
+import { ProtectedRoute } from "./ProtectedRoute";
 
-export default function Router() {
-  return (
-    <Routes>
-      <Route path="/login" element={<LoginPage />} />
-
-      <Route
-        path="/"
-        element={
-          <ProtectedRoute>
-            <HomePage />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route path="/register" element={<RegisterPage />} />
-    </Routes>
-  );
-}
+export const router = createBrowserRouter([
+  {
+    element: <LayoutPrincipal />,
+    children: [
+      {
+        path: "/login",
+        element: <LoginPage />,
+      },
+      {
+        path: "/register",
+        element: <RegisterPage />,
+      },
+    ],
+  },
+  {
+    element: (
+      <ProtectedRoute>
+        <LayoutSecundary />{" "}
+      </ProtectedRoute>
+    ),
+    children: [
+      {
+        path: "/",
+        element: <PanelPage />,
+      },
+    ],
+  },
+]);

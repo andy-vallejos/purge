@@ -83,7 +83,7 @@
 
 @media (max-width: 500px) {
   .container {
-    width: 400px;
+    width: 100%;
     border: none;
   }
   .information__personal {
