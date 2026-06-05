@@ -1,0 +1,8 @@
+export const areas = [
+  "DESARROLLO WEB",
+  "DISEÑO UI/UX",
+  "BACKEND",
+  "SEGURIDAD",
+  "DESARROLLO MOBILE",
+  "INTELIGENCIA ARTIFICIAL",
+];
