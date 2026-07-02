@@ -1,0 +1,100 @@
+.container {
+  width: 100%;
+  height: 80vh;
+}
+
+.information__survivors {
+  width: 100%;
+  background: var(--background-2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+.information__survivors h1 {
+  color: var(--color-2);
+}
+
+.information__survivors h2 {
+  color: var(--color-3);
+}
+
+.stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+}
+
+.stat_element {
+  border-left: 3px solid white;
+  padding: 10px;
+}
+
+.delete {
+  border-left: 3px solid red;
+}
+
+.stat_element h3 {
+  color: var(--color-3);
+}
+
+.stat_element p {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.delete p {
+  color: #cd032b;
+}
+
+.card {
+  background: var(--background-2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  text-overflow: ellipsis;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.information {
+  display: flex;
+  gap: 20px;
+}
+
+.information h2 {
+  color: white;
+}
+
+.information h3 {
+  color: var(--color-3);
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.card__footer {
+  color: rgb(92, 218, 88);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.eliminado p {
+  color: #cd032b;
+}

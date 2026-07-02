@@ -1,0 +1,1 @@
+export { SurvivorsPage } from "./SurvivorsPage";

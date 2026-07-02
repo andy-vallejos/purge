@@ -1,6 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import { LayoutPrincipal, LayoutSecundary } from "../layouts";
-import { LoginPage, RegisterPage, PanelPage } from "../pages";
+import {
+  LoginPage,
+  RegisterPage,
+  PanelPage,
+  SurvivorsPage,
+  AdminPage,
+  NotFoundPage,
+} from "../pages";
 import { ProtectedRoute } from "./ProtectedRoute";
 
 export const router = createBrowserRouter([
@@ -15,18 +22,31 @@ export const router = createBrowserRouter([
         path: "/register",
         element: <RegisterPage />,
       },
+      {
+        path: "/survivors",
+        element: <SurvivorsPage />,
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
+      },
     ],
   },
   {
     element: (
       <ProtectedRoute>
-        <LayoutSecundary />{" "}
+        <LayoutSecundary />
       </ProtectedRoute>
     ),
     children: [
       {
         path: "/",
         element: <PanelPage />,
+      },
+
+      {
+        path: "/admin",
+        element: <AdminPage />,
       },
     ],
   },

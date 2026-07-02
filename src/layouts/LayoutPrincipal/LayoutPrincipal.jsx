@@ -1,12 +1,20 @@
 import style from "./LayoutPrincipal.module.css";
 import { NavPrincipal } from "../../components";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 export function LayoutPrincipal() {
+  const location = useLocation().pathname;
+  console.log;
   return (
     <div className={style.container}>
-      <div className={style.decoration}></div>
-      <div className={`${style.decoration} ${style.blue}`}></div>
+      {location === "/login" || location === "/register" ? (
+        <>
+          <div className={style.decoration}></div>
+          <div className={`${style.decoration} ${style.blue}`}></div>
+        </>
+      ) : (
+        <></>
+      )}
 
       <NavPrincipal />
       <main className={style.main}>

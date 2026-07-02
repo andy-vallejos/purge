@@ -1,17 +1,14 @@
 .container,
-main,
-footer {
+main {
   width: 100%;
 }
 
 .container,
-main,
-footer {
+main {
   display: flex;
 }
 
-main,
-footer {
+main {
   align-items: center;
 }
 
@@ -43,11 +40,6 @@ footer {
   min-height: 80vh;
   justify-content: center;
   padding: 30px;
-}
-
-footer {
-  color: var(--color-2);
-  padding: 20px;
 }
 
 @media (max-width: 500px) {
